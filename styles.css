@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  --color-background: #e0f1e7;
+  --color-button: #0c7d69;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.background {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.box__container {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 2rem;
+  min-width: 18rem;
+  width: 25rem;
+}
+
+.form__container {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.container__header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.8rem;
+  width: 100%;
+}
+
+.form__text {
+  font-size: 1.5rem;
+}
+
+.form__input {
+  border-radius: 1rem;
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 2rem;
+}
+
+.radio__wrapper {
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.radiop {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 275px) {
+  .radiop {
+    font-size: 1.5rem;
+  }
+}
+
+.radio__header {
+  font-size: 1.5rem;
+}
+
+.message__header {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.message__box {
+  border-radius: 1rem;
+  height: 14rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.checkbox__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox__paragraph {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.button {
+  background-color: var(--color-button);
+  border-radius: 1rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 3rem;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.button:hover {
+opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .box__container {
+    width: 50rem;
+  }
+
+  .name__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .query__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+}

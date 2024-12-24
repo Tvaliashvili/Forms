@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Homework #6</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="box__container">
+        <h1 class="container__header">დაგვიკავშირდით</h1>
+        <div class="form__container">
+          <form action="action">
+            <div class="name__wrapper">
+              <label class="form__text" for="fname">
+                სახელი *
+                <input class="form__input" type="text" id="fname" name="fname"
+              /></label>
+              <label class="form__text" for="lname">
+                გვარი *
+                <input class="form__input" type="text" id="lname" name="lname"
+              /></label>
+            </div>
+            <label class="form__text" for="email">
+              ელ. მეილი *
+              <input class="form__input" type="email" id="email" name="email"
+            /></label>
+
+            <label class="radio__header" for="check1" for="check2"
+              >ინფორმაციის ტიპი *</label
+            >
+            <div class="query__wrapper">
+              <div class="radio__wrapper">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  id="check"
+                  name="check"
+                  value="yes"
+                />
+                <p class="radiop">ზოგადი ინფორმაცია</p>
+              </div>
+              <div class="radio__wrapper">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  id="check"
+                  name="check"
+                  value="yes"
+                />
+                <p class="radiop">დახმარების მოთხოვნა</p>
+              </div>
+            </div>
+            <label class="message__header" for="message"
+              >შეტყობინება<input
+                class="message__box"
+                type="text"
+                name="message"
+                id="message"
+            /></label>
+            <div class="checkbox__container">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+              />
+              <p class="checkbox__paragraph">
+                ვაცხადებ თანხმობას დაკავშირებაზე
+              </p>
+            </div>
+            <input class="button" type="button" value="გაგზავნა" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
